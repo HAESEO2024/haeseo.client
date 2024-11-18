@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.header{
+    height: 3.13em;
+    width: 100%;
+    border-bottom: 0.06em solid #b2b2b2;
+    border-color: #b2b2b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo{
+    margin-left: 8.75em;
+}
+
+.logo img{
+    height: 1.56em;
+    width: auto;
+}
+
+@font-face {
+    font-family: 'GeekbleMalang2WOFF2';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/GeekbleMalang2WOFF2.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    font-family: 'GeekbleMalang2WOFF2', sans-serif;
+    font-size: 1.5em;
+    margin: 0.63em 0em;
+
+}
+
+.start{
+    padding-top: 9.38em;
+    margin-left: 10.63em;
+    position: relative;
+    z-index: 1;
+}
+
+.start img{
+    height: 3.75em;
+}
+
+.start button{
+    border-radius: 0.63em;
+    background-color: #48B3FF;
+    border: none;
+    color: #fff;
+    height: 2.19em;
+    width: 9.38em;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.img{
+    background-image: url("src/assets/StartBG.svg");
+    background-size: cover;
+    height: 100vh;
+}

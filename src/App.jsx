@@ -1,5 +1,4 @@
-
-import StartPage from "./component/StartPage/";
+import StartPage from "./pages/StartPage/";
 
 function App(){
     return(

@@ -11,7 +11,7 @@ function StartPage(){
 
     const TeacherPage = () => {
         setModalOpen(false);
-        //선생님 로그인 페이지 이동
+        //
     };
 
     const StudentPage = () => {
@@ -20,14 +20,9 @@ function StartPage(){
     };
 
     return(
-        <div className={`BG ${modalOpen ? 'blur' : ''}`}>    
-            <Header />
-            <div className="start">
-                <img src={logo} />
-                <p>부산소프트웨어마이스터 일반교과 온라인 저지를 지금 시작해보세요!</p>
-                <button onClick={() => setModalOpen(true)}>시작하기</button>
-            </div>
-                {
+        <>
+        <Header />
+        {
                 modalOpen &&
                 <div className={'modal-container'} ref={modalBackground} onClick={e => {
                     if (e.target === modalBackground.current) {
@@ -49,7 +44,14 @@ function StartPage(){
                     </div>  
                 </div>
                 }
-        </div>
+                <div className={`BG ${modalOpen ? 'blur' : ''}`}>
+                    <div className="start">
+                        <img src={logo} />
+                        <p>부산소프트웨어마이스터 일반교과 온라인 저지를 지금 시작해보세요!</p>
+                        <button onClick={() => setModalOpen(true)}>시작하기</button>
+                    </div>
+                </div>
+        </>
     );
 }
 export default StartPage;

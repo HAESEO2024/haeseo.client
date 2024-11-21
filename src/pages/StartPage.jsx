@@ -29,16 +29,16 @@ function StartPage(){
                         setModalOpen(false);
                     }
                 }}> 
-                    <div className="Teacher">
+                    <div className="Teacher" onClick={TeacherPage}>
                         <img src={Teacher} />
-                        <button onClick={TeacherPage} className="TeacherB">
+                        <button className="TeacherB">
                             <h2>선생님으로 해서 시작하기</h2>
                             <h3>*로그인 필요*</h3>
                         </button>
                     </div>
-                    <div className="Student">
+                    <div className="Student" onClick={StudentPage}>
                         <img src={Student} />
-                        <button onClick={StudentPage} className="StudentB">
+                        <button className="StudentB">
                             <h2>학생으로 해서 시작하기</h2>
                         </button>
                     </div>  
